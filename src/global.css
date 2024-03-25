@@ -1,6 +1,7 @@
 :root {
     --bg: #121212;
     --feat: #ff3e00;
+    --blackText: #121212;
 }
 
 *,
@@ -51,14 +52,34 @@ h1,
 h2,
 h3 {
     font-family: 'Roboto Condensed Variable', sans-serif;
+    line-height: 1.2;
 }
 
 h1 {
     font-size: calc(36/16 *1rem);
 }
 
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
 /* Classes */
 .wrap {
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 20px;
+}
+
+.btn {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: 250ms;
+}
+
+.btn:hover {
+    background: #fff;
+    color: var(--blackText);
+    transition: 125ms;
 }
